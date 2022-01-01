@@ -23,9 +23,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import joblib
 
-class Inputview(viewsets.ModelViewSet):
-    queryset = Input.objects.all()
-    serializer_class = InputSerializers
+# class Inputview(viewsets.ModelViewSet):
+#     queryset = Input.objects.all()
+#     serializer_class = InputSerializers
   
 def FormView(request):
     return render(request,'forms.html',{})
