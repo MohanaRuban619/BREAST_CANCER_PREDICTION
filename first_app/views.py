@@ -30,7 +30,7 @@ class Inputview(viewsets.ModelViewSet):
 def FormView(request):
     return render(request,'forms.html',{})
 def status(request):
-    file = joblib.load(open("C:/Users/DELL/Desktop/mysite/first_app/b_c.svc","rb"))
+    file = joblib.load(open("first_app/b_c.svc","rb"))
     clas = file
     lis = []
     lis.append(request.GET["radius_mean"])
