@@ -18,13 +18,13 @@ from django.urls import path, include
 
 from first_app.views import FormView
 from first_app import views
-# from rest_framework import routers
-# routers = routers.DefaultRouter()
+from rest_framework import routers
+routers = routers.DefaultRouter()
 from first_app import views
 
 
 urlpatterns = [
-#     path('api/', include(routers.urls)),
+    path('api/', include(routers.urls)),
     path('form/',views.FormView,name='forms'),
     path("result/",views.status, name= "status"),
 ]
