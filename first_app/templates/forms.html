@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREST CANCR PREDECT</title>
+    
+    <link rel="stylesheet"  herf = "styles.css">
+</head>
+<body>
+    <h1>ENTER THE X-RAY OUTPUT</h1>
+    <form action="{% url 'status' %}">
+        {% csrf_token %}
+        Radius_mean: <input type = "text" required name="radius_mean"> <br><br>
+        Texture_mean: <input type = "text" required name="texture_mean"> <br><br>
+        Perimeter_mean: <input type = "text" required name="perimeter_mean"> <br><br>
+        Area_mean: <input type = "text" required name="area_mean"> <br><br>
+        Smoothness_mean: <input type = "text" required name="smoothness_mean"> <br><br>
+        Compactness_mean: <input type = "text" required name="compactness_mean"> <br><br>
+        Concavity_mean: <input type = "text" required name="concavity_mean"> <br><br>
+        Concave_points_mean: <input type = "text" required name="concave_points_mean"> <br><br>
+        Symmetry_mean: <input type = "text" required name="symmetry_mean"> <br><br>
+        Fractal_dimension_mean: <input type = "text" required name="fractal_dimension_mean"> <br><br>
+        Radius_se: <input type = "text" required name="radius_se"> <br><br>
+        Texture_se: <input type = "text" required name="texture_se"> <br><br>
+        Perimeter_se: <input type = "text" required name="perimeter_se"> <br><br>
+        Area_se: <input type = "text" required name="area_se"> <br><br>
+        Smoothness_se: <input type = "text" required name="smoothness_se"> <br><br>
+        Compactness_se: <input type = "text" required name="compactness_se"> <br><br>
+        Concavity_se: <input type = "text" required name="concavity_se"> <br><br>
+        Concave_points_se: <input type = "text" required name="concave_points_se"> <br><br>
+        Symmetry_se: <input type = "text" required name="symmetry_se"> <br><br>
+        Fractal_dimension_se: <input type = "text" required name="fractal_dimension_se"> <br><br>
+        Radius_worst: <input type = "text" required name="radius_worst"> <br><br>
+        Texture_worst: <input type = "text" required name="texture_worst"> <br><br>
+        Perimeter_worst: <input type = "text" required name="perimeter_worst"> <br><br>
+        Area_worst: <input type = "text" required name="area_worst"> <br><br>
+        Smoothness_worst: <input type = "text" required name="smoothness_worst"> <br><br>
+        Compactness_worst: <input type = "text" required name="compactness_worst"> <br><br>
+        Concavity_worst: <input type = "text" required name="concavity_worst"> <br><br>
+        Concave_points_worst: <input type = "text" required name="concave_points_worst"> <br><br>
+        Symmetry_worst: <input type = "text" required name="symmetry_worst"> <br><br>
+        Fractal_dimension_wors: <input type = "text" required name="fractal_dimension_wors"> <br><br>
+
+        <input type = "submit" value = "submit">
+    </form>
+</action>
+</body>
+</html>
