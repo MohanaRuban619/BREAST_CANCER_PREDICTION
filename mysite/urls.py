@@ -28,6 +28,6 @@ from first_app.views import FormView
 
 urlpatterns = [
     # path('static/',settings.STATIC_URL,include("static.urls")),
-    path('form/',views.FormView,name='forms'),
+    path('',views.FormView,name='forms'),
     path("result/",views.status, name= "status"),
 ]
