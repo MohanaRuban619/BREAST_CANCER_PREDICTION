@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
     
 <head>
+    <style>
+        h1 {text-align: center;}
+        
+        
+    </style>
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +16,11 @@
     
     <link rel="stylesheet"  herf = "styles.css">
 </head>
-<body>
-    <h1>ENTER THE X-RAY OUTPUT</h1>
+<body background='https://www.pixelstalk.net/wp-content/uploads/2016/05/Breast-Cancers-Evolution.jpg'>
+  <h1>ENTER THE X-RAY OUTPUT</h1>
     <form action="{% url 'status' %}">
         {% csrf_token %}
-        Radius_mean: <input type = "text" required name="radius_mean"> <br><br>
+        <h2> Radius_mean: <input type = "text" required name="radius_mean"> <br><br> 
         Texture_mean: <input type = "text" required name="texture_mean"> <br><br>
         Perimeter_mean: <input type = "text" required name="perimeter_mean"> <br><br>
         Area_mean: <input type = "text" required name="area_mean"> <br><br>
@@ -28,7 +34,7 @@
         Texture_se: <input type = "text" required name="texture_se"> <br><br>
         Perimeter_se: <input type = "text" required name="perimeter_se"> <br><br>
         Area_se: <input type = "text" required name="area_se"> <br><br>
-        Smoothness_se: <input type = "text" required name="smoothness_se"> <br><br>
+        Smoothness_se: <input type = "text" required name="smoothness_se"> <br><br> 
         Compactness_se: <input type = "text" required name="compactness_se"> <br><br>
         Concavity_se: <input type = "text" required name="concavity_se"> <br><br>
         Concave_points_se: <input type = "text" required name="concave_points_se"> <br><br>
@@ -43,7 +49,7 @@
         Concavity_worst: <input type = "text" required name="concavity_worst"> <br><br>
         Concave_points_worst: <input type = "text" required name="concave_points_worst"> <br><br>
         Symmetry_worst: <input type = "text" required name="symmetry_worst"> <br><br>
-        Fractal_dimension_wors: <input type = "text" required name="fractal_dimension_wors"> <br><br>
+        Fractal_dimension_wors: <input type = "text" required name="fractal_dimension_wors"> <br><br> </h2>
 
         <input type = "submit" value = "submit">
     </form>
